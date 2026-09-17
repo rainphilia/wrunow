@@ -211,7 +211,7 @@ const firebaseConfig = {
         let logoClickTimer;
 
         // เปลี่ยนจาก localStorage เป็นข้อมูลจาก Firebase
-        let posts = [];
+        let posts = JSON.parse(localStorage.getItem('wrunow_posts')) || [];
 
 
         // =====================================================
